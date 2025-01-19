@@ -21,8 +21,8 @@ jobs:
 
       - name: Deploy to main
         run: |
-          git config --global user.email "shailendrastha7@gmail.com"
-          git config --global user.name "ShailendraDev7"
+          git config user.email "shailendrastha7@gmail.com"
+          git config user.name "ShailendraDev7"
           git checkout main
           git rm -rf .
           cp -r dist/* .
