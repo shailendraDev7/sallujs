@@ -37,9 +37,13 @@ jobs:
         run: | 
           echo "node_modules" >> .gitignore
 
+      - name: Remove all files except .gitignore 
+        run: | 
+          find . -type f ! -name '.gitignore' -delete 
+          find . -type d ! -path './.git' -exec rm -rf {} +
+
       - name: Copy build files
         run: |
-          git rm -rf .
           cp -r dist/* .
 
       - name: Commit and push changes
