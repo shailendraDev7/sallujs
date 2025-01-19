@@ -1,0 +1,29 @@
+/* Navigation Bar */
+.nav .catTab{margin-bottom: 6px;padding:15px; display: flex; justify-content: right; align-items: center;}
+.nav .catTab button{background-color: var(--main-color);  text-transform: capitalize; }
+.nav .catTab button a{color: black;}
+
+.nav ul {padding: 5px; display: flex;}
+.nav ul li{padding: 10px;}
+.nav ul li button{ text-transform: capitalize;}
+.nav ul li button:hover{background:#36454F; opacity: 1;} 
+.nav ul li a{ color: var(--main-color); z-index:1; text-decoration: none; transition:all 0.2s ease-in-out; -webkit-transition:all 0.2s ease-in-out; -moz-transition:all 0.2s ease-in-out; -ms-transition:all 0.2s ease-in-out; -o-transition:all 0.2s ease-in-out; }
+/* .nav ul li a:hover{color: var(--supporting-color);}  */
+/* .nav ul li a::after{
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: var(--main-color);
+    transition: width 0.3s linear;
+    -webkit-transition: width 0.3s linear;
+    -moz-transition: width 0.3s linear;
+    -ms-transition: width 0.3s linear;
+    -o-transition: width 0.3s linear;
+}
+.nav ul li a:hover::after{
+    width: 100%;
+} */
+
+
+/* End of Navigation Bar */
