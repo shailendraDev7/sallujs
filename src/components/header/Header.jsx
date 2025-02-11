@@ -7,27 +7,25 @@ import CredSection from '../CredSection'
 const Header = () => {
   return (
     <>
-      <header className=''>
-        <div className='container mx-auto p-4'>
-          <div className='flex justify-between align-items-center'>
-            <div className='flex-1'>
+      <header className='container bg-gray-850 shadow-white-lg rounded-b-3xl py-5'>
+        <div className='flex flex-row justify-between items-center px-4'>
+            <div className='basis-3xs'>
               <img src={logo} />
             </div>
             
             {/* Nav */}
-            <div className='flex-1 p-4 m-2'>
-              <Nav />
+            <div className='basis-sm'>
+              <Nav/>
             </div>
 
-            <div className='flex-1 p-4 m-2'>
+            <div className='basis-xs'>
               <CredSection/>
             </div>
 
-            <div className='flex-1 p-4 m-2'>
+            <div className='basis-xs'>
               <ToggleMode/>
             </div>
           </div>
-        </div>
       </header>
     </>
   )
