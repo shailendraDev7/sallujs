@@ -3,7 +3,7 @@ import React from 'react'
 const Featurebox = () => {
     return (
 
-        <div className='container bg-gray-850 shadow-white-lg p-6'>
+        <div className='container bg-gray-850 shadow-white-lg p-6 hidden'>
             {/* Accordian Header */}
             <div className='bg-amber-500 rounded-full py-5 px-10 my-5 text-black text-2xl font-extrabold flex items-center'>
                 <div className='flex-grow'>Weather App</div>
