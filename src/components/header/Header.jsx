@@ -9,23 +9,23 @@ const Header = () => {
     <>
       <header className='container bg-gray-850 shadow-white-lg rounded-b-3xl py-5'>
         <div className='flex flex-row justify-between items-center px-4'>
-            <div className='basis-3xs'>
-              <img src={logo} />
-            </div>
-            
-            {/* Nav */}
-            <div className='basis-sm'>
-              <Nav/>
-            </div>
-
-            <div className='basis-xs'>
-              <CredSection/>
-            </div>
-
-            <div className='basis-xs'>
-              <ToggleMode/>
-            </div>
+          <div className='basis-sm'>
+            <img src={logo} />
           </div>
+
+          {/* Nav */}
+          <div className='basis-sm'>
+            <Nav />
+          </div>
+
+          <div className='basis-sm'>
+            <CredSection />
+          </div>
+
+          {/* <div className='basis-xs'>
+            <ToggleMode />
+          </div> */}
+        </div>
       </header>
     </>
   )

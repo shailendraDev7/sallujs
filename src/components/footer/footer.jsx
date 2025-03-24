@@ -39,22 +39,22 @@ const Footer = () => {
                     <h2 className="text-orange-500 text-2xl p-2">Connect With Us.</h2>
                     <ul className='flex flex-col space-y-4 items-start'>
                         <li><a href="https://facebook.com/shailendra.shrestha1" target="_blank">
-                            <i class="fa-brands fa-facebook"></i> Facebook
+                            <i className="fa-brands fa-facebook"></i> Facebook
                         </a></li>
                         <li><a href="https://www.instagram.com/shailendra.stha" target="_blank">
-                            <i class="fa-brands fa-instagram"></i> Instagram
+                            <i className="fa-brands fa-instagram"></i> Instagram
                         </a></li>
                         <li><a href="https://www.linkedin.com/in/shailendra-shrestha-9154b91a6" target="_blank">
-                            <i class="fa-brands fa-linkedin"></i> LinkedIn
+                            <i className="fa-brands fa-linkedin"></i> LinkedIn
                         </a></li>
                         <li><a href="https://x.com/Shailen25213921" target="_blank">
-                            <i class="fa-brands fa-x"></i> Twitter
+                            <i className="fa-brands fa-x"></i> Twitter
                         </a></li>
                         <li><a href="https://x.com/Shailen25213921" target="_blank">
-                            <i class="fa-brands fa-google"></i> Google
+                            <i className="fa-brands fa-google"></i> Google
                         </a></li>
                         <li><a href="https://x.com/Shailen25213921" target="_blank">
-                            <i class="fa-brands fa-youtube"></i> Youtube
+                            <i className="fa-brands fa-youtube"></i> Youtube
                         </a></li>
                     </ul>
                 </div>

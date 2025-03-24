@@ -1,0 +1,59 @@
+[
+  {
+    "id": 1,
+    "name": "Using Bootstrap",
+    "description": "The Weather App is a dynamic JavaScript application designed to provide users with real-time weather information. Utilizing modern web technologies, it fetches data from weather APIs to deliver accurate and up-to-date weather conditions for any specified location. The app features a clean and intuitive user interface, making it easy for users to search for current weather data, view forecasts, and receive weather-related alerts. ",
+    "features": [
+      "Bootstrap",
+      "CDN LInks",
+      "Responive Design",
+      "User-firendly interface",
+      "Fast Loading"
+    ],
+    "image": "../images/lapi.png",
+    "category": "Javascript",
+    "tags": [
+      "react",
+      "javascript",
+      "tailwind"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "API Working",
+    "description": "The API is a dynamic JavaScript application designed to provide users with real-time weather information. Utilizing modern web technologies, it fetches data from weather APIs to deliver accurate and up-to-date weather conditions for any specified location. The app features a clean and intuitive user interface, making it easy for users to search for current weather data, view forecasts, and receive weather-related alerts. ",
+    "features": [
+      "Fetch API",
+      "Axios",
+      "Responive Design",
+      "XMLHttpRequest",
+      "Fetch Data"
+    ],
+    "image": "../images/lapi.png",
+    "category": "Axios, Javascript, Tailwind",
+    "tags": [
+      "react",
+      "javascript",
+      "tailwind"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Accordian Working",
+    "description": "The Weather App is a dynamic JavaScript application designed to provide users with real-time weather information. Utilizing modern web technologies, it fetches data from weather APIs to deliver accurate and up-to-date weather conditions for any specified location. The app features a clean and intuitive user interface, making it easy for users to search for current weather data, view forecasts, and receive weather-related alerts. ",
+    "features": [
+      "Accordian",
+      "Smmoth Scrolling",
+      "Managed",
+      "Clean Code",
+      "Optimized Loading"
+    ],
+    "image": "../images/lapi.png",
+    "category": "Axios, Javascript, JS",
+    "tags": [
+      "react",
+      "javascript",
+      "tailwind"
+    ]
+  }
+]
