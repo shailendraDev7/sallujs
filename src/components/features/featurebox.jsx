@@ -12,21 +12,22 @@ const FeatureBox = () => {
     const toggleVisibility = () => {
         setToggleMain(!toggleMain);
     }
-    
-    const handleToggleNow = () => {
-        return console.log('clicked');
-        // const toggleDynamic = (content) => {
-        //     // e.preventDefault();
-        //     if (content.classList.contains('max-h-0')) {
-        //         content.classList.remove('max-h-0');
-        //         content.classList.add('max-h-full');
-        //     } else {
-        //         content.classList.remove('max-h-full');
-        //         content.classList.add('max-h-0');
-        //     }
-        // }
-        // const accordionContent = document.querySelector('.accordion-summary');
-        // toggleDynamic(accordionContent);
+
+    const handleToggleNow = (id, visible) => {
+
+        const content = document.getElementById(visible);
+        console.log(content);
+        if (content) {
+            if (content.classList.contains('max-h-0')) {
+                content.classList.remove('max-h-0');
+                content.classList.add('max-h-full');
+            } else {
+                content.classList.remove('max-h-full');
+                content.classList.add('max-h-0');
+            }
+        } else {
+            console.error(`Element with ID "${visible}" not found`);
+        }
     }
 
     return (
@@ -89,10 +90,11 @@ const FeatureBox = () => {
             </div>
             {/* Weather App */}
 
+            {/* <h1 onClick={handleToggleNow}>CLICK ME</h1> */}
             <div>
                 {
                     data.map((curElem) => {
-                        return <Accordion key={curElem.id} curElem={curElem} handleToggleNow={handleToggleNow}/>
+                        return <Accordion key={curElem.id} curElem={curElem} handleToggleNow={handleToggleNow} />
                     })
                 }
             </div>

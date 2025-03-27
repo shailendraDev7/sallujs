@@ -1,23 +1,23 @@
 import React, { useState } from 'react';
 
-const Accordion = ({ curElem }, {handleToggleNow}) => {
+const Accordion = ({ curElem , handleToggleNow}) => {
     const { id, name, description, features, category, tags } = curElem;
 
     const visible = `visible${id}`;
     
     const toggleNow = () => {
-        return handleToogleNow();
+        return handleToggleNow(id, visible);
     }
 
     return (
-        <div className='container bg-gray-850 shadow-white-lg p-6' id={`${visible}`}>
+        <div className='container bg-gray-850 shadow-white-lg p-6'>
             {/* Content Header */}
-            <div className='bg-amber-500 rounded-full py-5 px-10 my-5 text-black text-2xl font-extrabold flex items-center cursor-pointer' onClick={toggleNow}>
+            <div className='bg-amber-500 rounded-full py-5 px-10 my-5 text-black text-2xl font-extrabold flex items-center cursor-pointer'onClick={toggleNow}>
                 <div className='flex-grow'>{name}</div>
                 <i className='fas fa-angle-down cursor-pointer'></i>
             </div>
             {/* Accordian-Summary  */}
-            <div className='accordion-summary overflow-hidden max-h-0'>
+            <div className='accordion-summary overflow-hidden max-h-0' id={`${visible}`}>
                 <div className='rounded-lg overflow-hidden shadow-lg bg-black p-4 m-2'>
                     <div className="p-4 py-2">
                         {/* Accordian-Description  */}
