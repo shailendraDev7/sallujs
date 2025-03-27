@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import Accordion from './accordion';
-import { getData } from '../../api/localData';
+import { GetData } from '../../api/localData';
 
 const FeatureBox = () => {
 
-    const data = getData();
+    const data = GetData();
     const [toggleMain, setToggleMain] = useState(false);
 
     const toggleVisibility = () => {
@@ -14,7 +14,6 @@ const FeatureBox = () => {
     const handleToggleNow = (id, visible) => {
 
         const content = document.getElementById(visible);
-        console.log(content);
         if (content) {
             if (content.classList.contains('max-h-0')) {
                 content.classList.remove('max-h-0');

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import axios from "axios";
 
-export const getData = () => {
+export const GetData = () => {
     const [data, setData] = useState([]);
 
     // Create an instance fro axios
