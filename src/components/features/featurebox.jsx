@@ -34,7 +34,7 @@ const FeatureBox = () => {
             <div className='container bg-gray-850 shadow-white-lg p-6'>
                 {/* Content Header */}
                 <div className='bg-amber-500 rounded-full py-5 px-10 my-5 text-black text-2xl font-extrabold flex items-center cursor-pointer' onClick={toggleVisibility}>
-                    <div className='flex-grow'>Weather App</div>
+                    <div className='flex-grow'>Feather App</div>
                     <i className='fas fa-angle-down cursor-pointer'></i>
                 </div>
                 {/* Accordian-Summary  */}
