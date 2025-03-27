@@ -1,23 +1,43 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import { writeFileSync, existsSync, mkdirSync } from 'fs';
+import { resolve } from 'path';
 
-// https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react(),
+    {
+      name: 'add-redirects',
+      writeBundle() {
+        const distDir = resolve(__dirname, 'dist');
+
+        // Ensure the dist directory exists
+        if (!existsSync(distDir)) {
+          mkdirSync(distDir);
+        }
+
+        const redirectsFile = resolve(distDir, '_redirects');
+        const redirectsContent = '/*    /index.html   200';
+
+        // Write the _redirects file
+        writeFileSync(redirectsFile, redirectsContent);
+        console.log('Created _redirects file successfully!');
+      },
+    },
+  ],
   build: {
     outDir: 'dist',
     sourcemap: true,
     rollupOptions: {
       output: {
-        manualChunks: undefined
-      }
+        manualChunks: undefined,
+      },
     },
-    cssCodeSplit: true
+    cssCodeSplit: true,
   },
   base: '/',
-  //ALso host:true exposes in public addresses
   preview: {
     host: true,
-    port: 8080
-  }
-})
+    port: 8080,
+  },
+});
