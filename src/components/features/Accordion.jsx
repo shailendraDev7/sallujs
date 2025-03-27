@@ -1,5 +1,3 @@
-import React, { useState } from 'react';
-
 const Accordion = ({ curElem , handleToggleNow}) => {
     const { id, name, description, features, category, tags } = curElem;
 

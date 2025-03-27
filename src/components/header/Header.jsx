@@ -1,7 +1,6 @@
-import React from 'react'
+
 import logo from '../../assets/images/favicon/android-chrome-192x192.png'
 import Nav from './nav/Nav'
-import ToggleMode from '../togglemode/ToggleMode'
 import CredSection from '../CredSection'
 
 const Header = () => {

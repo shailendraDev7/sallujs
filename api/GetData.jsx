@@ -1,4 +1,4 @@
-import {getPost} from './PostApi.js';
+import {getPost} from './PostApi.jsx';
 
 export const getData = async () => {    
     try{

@@ -1,6 +1,3 @@
-import React from 'react'
-import { Button } from '@mui/material';
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import { Link } from 'react-router-dom';
 
 const CredSection = () => {

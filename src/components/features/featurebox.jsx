@@ -1,7 +1,5 @@
-import React from 'react';
 import { useState } from 'react'
 import Accordion from './accordion';
-// import { getData } from '../../api/GetData';
 import { getData } from '../../api/localData';
 
 const FeatureBox = () => {

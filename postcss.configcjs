@@ -1,9 +1,0 @@
-// const autoprefixer = require("autoprefixer");
-
-// export default {
-//     plugins: [
-//       require('tailwindcss'),
-//       require('autoprefixer'),
-//     ],
-//   }
-  

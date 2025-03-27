@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import axios from "axios";
 
 export const getData = () => {
@@ -8,7 +8,7 @@ export const getData = () => {
     const api = axios.create({
         baseURL:'topics.json'
     });
-
+``
     //get the data
     const getPost = () => {
         return api.get();
