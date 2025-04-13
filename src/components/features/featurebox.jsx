@@ -1,10 +1,10 @@
 import { useState } from 'react'
-import Accordion from './accordion';
-import { GetData } from '../../api/localData';
+import Accordion from './Accordion';
+import { useGetData } from '../../hooks/useGetData';
+
 
 const FeatureBox = () => {
-
-    const data = GetData();
+    const data = useGetData();
     const [toggleMain, setToggleMain] = useState(false);
 
     const toggleVisibility = () => {
