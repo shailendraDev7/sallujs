@@ -6,7 +6,6 @@
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Courier New', Courier, monospace
 }
 
 html {
@@ -15,25 +14,13 @@ html {
   color: white;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
 p,
 li,
 a {
-  font-family: cursive;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   letter-spacing: 0.1rem;
-  /* color: var(--font-color); */
-  /* font-weight: 400; */
-  /* line-height: 1.5; */
 }
+
 
 a {
   text-decoration: none;
@@ -47,6 +34,7 @@ a:hover{
 
 li {
   list-style: none;
+  margin: 0;
 }
 
 
@@ -105,7 +93,7 @@ ul li a:hover {
 .cred a {
   color: white;
   text-decoration: underline;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
 .cred a:hover {
@@ -115,14 +103,16 @@ ul li a:hover {
 /***** End Navigation Section*****/
 
 /***** Footer Section *****/  
-.footerSection ul{
+/* .footerSection ul{
   margin-left: 0;  
 }
 
 .footerSection li{
   margin: 0;  
   padding: 0;
+} */
+
+svg{
+  display: inline-block;
 }
-
-
 /***** End Footer Section *****/

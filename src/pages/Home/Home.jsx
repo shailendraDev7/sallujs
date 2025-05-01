@@ -1,4 +1,4 @@
-import FeatureBox from "../../components/features/FeatureBox";
+import FeatureBox from '../../components/features/FeatureBox';
 import HeroSection from '../../components/HeroSection';
 
 const Home = () => {

@@ -21,5 +21,5 @@ export const useGetData = () => {
     fetchData();
   }, []);
 
-  return data;
+  return {data, loading, error};
 };

@@ -6,9 +6,9 @@ import CredSection from '../CredSection'
 const Header = () => {
   return (
     <>
-      <header className='container bg-gray-850 shadow-white-lg rounded-b-3xl py-5'>
-        <div className='flex flex-row justify-between items-center px-4'>
-          <div className='basis-sm'>
+      <header className='container shadow-white-lg rounded-b-3xl py-12'>
+        <div className='flex flex-row justify-around items-center'>
+          <div className='basis-sm px-0'>
             <img src={logo} />
           </div>
 
