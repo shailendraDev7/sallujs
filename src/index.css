@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  color: white;
+}
+
+p,
+li,
+a {
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+}
+
+
+a {
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 0 10px;
+}
+
+a:hover{
+  color: orange;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+}
+
+
+/* Theme */
+:root {
+  --main-color: #fac553;
+  --supporting-color: #fbf4e5;
+  --font-color: #fac553;
+  --primary-bg-color: #121b25;
+  --secondary-bg-color: #fff;
+  background: var(--primary-bg-color);
+
+
+  /* color-scheme: light dark; */
+
+  /* font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+  /* --bg-color: #f7fcff;
+  --heading-color: #000a19;
+  --heading-color: #000a19;
+  --hero-heading-color: #0a043c;
+  --white-color: #ffffff;
+  --test: #070101;
+  --para-color: #504e4d;
+  --bnt-hover-bg-color: #003b99;
+  --btn-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  --footer-bg-color: var(--hero-heading-color) */
+}
+
+/* Layout */
+
+.cursor {
+  cursor: pointer;
+}
+
+/***** Navigation Section *****/
+
+ul li {
+  padding: 0 6px;
+}
+
+.nav a{
+  font-size: 1.6rem;
+}
+
+ul li a:hover {
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+}
+
+.cred a {
+  color: white;
+  text-decoration: underline;
+  font-size: 1.6rem;
+}
+
+.cred a:hover {
+  color: var(--main-color);
+}
+
+/***** End Navigation Section*****/
+
+/***** Footer Section *****/  
+/* .footerSection ul{
+  margin-left: 0;  
+}
+
+.footerSection li{
+  margin: 0;  
+  padding: 0;
+} */
+
+svg{
+  display: inline-block;
+}
+/***** End Footer Section *****/
