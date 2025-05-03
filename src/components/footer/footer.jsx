@@ -2,7 +2,7 @@ import { FaFacebook, FaGoogle, FaInstagram, FaLinkedin, FaTwitter, FaYoutube } f
 
 const Footer = () => {
     return (
-        <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 pb-10 shadow-inverted-white-lg mt-48 pt-12">
+        <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 pb-10 shadow-inverted-white-lg mt-24 pt-12">
             <div>
                 {/* <h2 className="text-orange-500 text-3xl font-bold py-4">Sallu JS</h2> */}
                 <div className='flex flex-col space-y-8 items-start'>

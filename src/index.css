@@ -14,11 +14,15 @@ html {
   color: white;
 }
 
-p,
 li,
 a {
   font-size: 1.4rem;
   letter-spacing: 0.1rem;
+}
+
+p{
+  font-size: 1.3rem;
+  text-align: justify;
 }
 
 
